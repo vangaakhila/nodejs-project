@@ -1,0 +1,9 @@
+h1 {
+  color: rgb(12, 231, 220);
+  text-transform: capitalize;
+}
+
+.profile-image {
+  max-width: "20px";
+
+}

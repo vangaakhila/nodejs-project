@@ -1,0 +1,29 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="/css/style.css"/>
+
+</head>
+<body class="container">
+<span>{{timestamp}}</span>
+    <h1>{{name}}</h1>
+    <img class="profile-image" src="{{image}}"/>
+    <h2>Company:{{company}}</h2>
+    <h3>Languages<h3>
+    <ol>
+    {{#languages}}
+    <li>
+    {{.}}
+    </li>
+    {{/languages}}
+    </ol>
+    <form action="/addprofile" method="POST">
+    <input type= "text" name="name" placeholder="Name"/><br>
+    <input type= "text" name="username" placeholder="UserName"/><br>
+    <input type="text" name="image" placeholder="image {/images/example.jpg}" /><br>
+    <input type= "text" name="company" placeholder="Company"/><br>
+    <input type= "text" name="languages" placeholder="Languages"/><br>
+    <input type= "submit" value="Add"/><br>
+    </form>
+</body>
+<html>
